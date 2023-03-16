@@ -12,6 +12,6 @@
 ## Estrutura das pastas
 
   - api: contém todas rotas utilizadas nos layouts
-  - controller: controlador dos layouts utilizados no projeto
-  - screens: contem todos os layouts utilizados no projeto 
+  - controller: contém os controladores dos layouts utilizados no projeto
+  - screens: contém todos os layouts utilizados no projeto 
   - App.java: é aonde manipulamos todo o projeto
