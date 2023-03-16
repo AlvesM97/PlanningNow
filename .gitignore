@@ -2,3 +2,4 @@
 .vscode/
 bin/
 .gitattributes
+.vscode/settings.json
