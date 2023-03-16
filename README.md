@@ -1,18 +1,17 @@
-## Getting Started
+## Project 5Style
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+  Projeto de um loja online para venda de roupas esportivas, para praticas de esportes.
 
-## Folder Structure
+## Estrutura de commit
 
-The workspace contains two folders by default, where:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+ - Atualizar arquivos: Update src/App.java (esse é o caminho do arquivo q vc está adicionando)
+ - Adicionar arquivos: Adding src/App.java (esse é o caminho do arquivo q vc está adicionando)
+ - remover arquivos: Remove src/App.java (esse é o caminho do arquivo q vc está adicionando)
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Estrutura das pastas
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+  - api: contém todas rotas utilizadas nos layouts
+  - controller: controlador dos layouts utilizados no projeto
+  - screens: contem todos os layouts utilizados no projeto 
+  - App.java: é aonde manipulamos todo o projeto
