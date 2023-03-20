@@ -1,0 +1,16 @@
+{
+    "java.project.sourcePaths": ["src"],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Users\\enrie\\OneDrive\\Documentos\\javafx-sdk-19.0.2.1\\lib\\javafx.base.jar",
+        "c:\\Users\\enrie\\OneDrive\\Documentos\\javafx-sdk-19.0.2.1\\lib\\javafx.controls.jar",
+        "c:\\Users\\enrie\\OneDrive\\Documentos\\javafx-sdk-19.0.2.1\\lib\\javafx.fxml.jar",
+        "c:\\Users\\enrie\\OneDrive\\Documentos\\javafx-sdk-19.0.2.1\\lib\\javafx.graphics.jar",
+        "c:\\Users\\enrie\\OneDrive\\Documentos\\javafx-sdk-19.0.2.1\\lib\\javafx.media.jar",
+        "c:\\Users\\enrie\\OneDrive\\Documentos\\javafx-sdk-19.0.2.1\\lib\\javafx.swing.jar",
+        "c:\\Users\\enrie\\OneDrive\\Documentos\\javafx-sdk-19.0.2.1\\lib\\javafx.web.jar",
+        "c:\\Users\\enrie\\OneDrive\\Documentos\\javafx-sdk-19.0.2.1\\lib\\javafx-swt.jar",
+        "c:\\Users\\enrie\\OneDrive\\Documentos\\Java\\mysql-connector-j-8.0.32\\mysql-connector-j-8.0.32.jar"
+    ]
+}
