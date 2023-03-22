@@ -1,6 +1,7 @@
 package controllers;
 
 import api.BDConnection;
+import models.User;
 import api.insert.*;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -24,7 +25,11 @@ public class register_account_controller {
 
     @FXML
     void createAccount(ActionEvent event) {
-        insert.insert(user_name.getText(), user_email.getText(), user_password.getText());
+        User new_user = new User(1, user_name.getText(), user_email.getText(), user_password.getText());
+
+        insert.insert(new_user.getUser_name(), new_user.getUser_email(), new_user.getUser_password());
+
+        System.out.println(new_user.getUser_email());
     }
 
     @FXML
