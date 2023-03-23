@@ -1,8 +1,11 @@
 package controllers;
 
+import java.util.StringJoiner;
+
 import api.BDConnection;
 import models.User;
 import api.insert.*;
+import api.select.user_select;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.PasswordField;
@@ -12,6 +15,10 @@ public class register_account_controller {
 
     BDConnection new_connection = new BDConnection();
     user_insert user = new user_insert();
+    user_select userSelect = new user_select();
+    StringJoiner joinerTest = new StringJoiner(", ", "[", "]");
+    StringJoiner joinerResult = new StringJoiner(", ", "[", "]");
+
     App app = new App();
 
     @FXML
@@ -26,9 +33,18 @@ public class register_account_controller {
     @FXML
     void createAccount(ActionEvent event) {
         User new_user = new User(user_name.getText(), user_email.getText(), user_password.getText());
-        user.insert(new_user.getUser_name(), new_user.getUser_email(), new_user.getUser_password());
+        joinerResult = userSelect.get(new_user.getUser_name(), new_user.getUser_email());
+        System.out.println(joinerResult);
+        System.out.println(joinerTest);
 
-        System.out.println(new_user.getUser_email());
+        if (joinerResult != joinerTest) {
+            System.out.println("Conta já existente");
+
+        } else {
+            user.insert(new_user.getUser_name(), new_user.getUser_email(), new_user.getUser_password());
+
+        }
+
     }
 
     @FXML
