@@ -11,9 +11,10 @@ public class user_insert {
 
         String sqlQuery;
 
-        sqlQuery = "insert into usuario (nome, email, senha) values (String name, String email, String password)";
+        sqlQuery = "insert into usuario (nome, email, senha) values ('" + name + "', '" + email + "', '" + password
+                + "')";
 
-        conexaoBd.executarQuery(sqlQuery);
+        conexaoBd.executarQueryInsert(sqlQuery);
     }
 
 }
