@@ -42,7 +42,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.home_controller">
   <children>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="400.0" prefWidth="618.0" VBox.vgrow="ALWAYS">
          <children>
@@ -66,7 +66,7 @@
             <Label layoutX="54.0" layoutY="173.0" prefHeight="26.0" prefWidth="158.0" text="Look and feel your best with " textFill="WHITE" />
             <Label layoutX="54.0" layoutY="191.0" text="the latest in sportswear" textFill="WHITE" />
             <Label layoutX="54.0" layoutY="204.0" text="and fashion trends." textFill="WHITE" />
-            <Button layoutX="53.0" layoutY="260.0" mnemonicParsing="false" style="-fx-background-color: black; -fx-background-radius: 5px; -fx-border-color: white; -fx-border-radius: 5px;" text="Lançamentos" textFill="WHITE">
+            <Button layoutX="53.0" layoutY="260.0" mnemonicParsing="false" onAction="#register" style="-fx-background-color: black; -fx-background-radius: 5px; -fx-border-color: white; -fx-border-radius: 5px;" text="Fazer cadastro" textFill="WHITE">
                <font>
                   <Font name="Calibri Bold" size="14.0" />
                </font>

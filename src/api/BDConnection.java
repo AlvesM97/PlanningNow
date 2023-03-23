@@ -1,10 +1,7 @@
 package api;
-
-
 import java.sql.*;
 
 public class BDConnection {
-    
     public static String url = "jdbc:mysql://localhost:3306/5style";
     public static String user = "Gustavo";
     public static String pswd = "1234";
@@ -17,7 +14,7 @@ public class BDConnection {
         
         try {
             db_connection = DriverManager.getConnection(url, user, pswd);
-            System.out.println("ConexÃ£o feita.");
+            System.out.println("Conexão feita.");
             sql_management = db_connection.createStatement();
         } catch (Exception Error) {
             System.out.println(Error.getMessage());
@@ -40,5 +37,4 @@ public class BDConnection {
 
         return -1;
     }
-
 }
