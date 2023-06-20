@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="759.0" prefWidth="1161.0" style="-fx-background-color: #F5F5F5;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Schedule_controller">
+   <children>
+      <Pane layoutX="14.0" layoutY="14.0" prefHeight="731.0" prefWidth="85.0" style="-fx-background-color: #2A486D; -fx-background-radius: 60px;">
+         <children>
+            <Button alignment="CENTER" cache="true" contentDisplay="TOP" layoutX="19.0" layoutY="120.0" minWidth="48.0" mnemonicParsing="false" onAction="#goFeed" prefHeight="50.0" prefWidth="37.0" style="-fx-background-radius: 60px; -fx-background-color: transparent;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <image>
+                        <Image url="@../images/feedW.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Text fill="WHITE" layoutX="29.0" layoutY="174.0" opacity="0.5" strokeType="OUTSIDE" strokeWidth="0.0" text="FEED" />
+            <Button alignment="CENTER" cache="true" contentDisplay="TOP" layoutX="19.0" layoutY="212.0" minWidth="48.0" mnemonicParsing="false" onAction="#goTime" prefHeight="50.0" prefWidth="37.0" style="-fx-background-radius: 60px; -fx-background-color: transparent;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <image>
+                        <Image url="@../images/horarioW.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Text fill="WHITE" layoutX="9.0" layoutY="267.0" opacity="0.5" strokeType="OUTSIDE" strokeWidth="0.0" text="HORARIOS" textAlignment="CENTER" wrappingWidth="68.4921875" />
+            <Pane layoutX="22.0" layoutY="315.0" prefHeight="42.0" prefWidth="42.0" style="-fx-background-color: White; -fx-background-radius: 60px;">
+               <children>
+                  <Button alignment="CENTER" cache="true" contentDisplay="TOP" layoutX="-3.0" layoutY="-4.0" minWidth="48.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="37.0" style="-fx-background-radius: 60px; -fx-background-color: transparent;">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <image>
+                              <Image url="@../images/agenda.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </Pane>
+            <Text fill="WHITE" layoutX="19.0" layoutY="370.0" opacity="0.5" strokeType="OUTSIDE" strokeWidth="0.0" text="AGENDA" />
+            <Line endX="-48.0" layoutX="117.0" layoutY="433.0" startX="-100.0" stroke="WHITE" />
+            <Button alignment="CENTER" cache="true" contentDisplay="TOP" layoutX="19.0" layoutY="479.0" minWidth="48.0" mnemonicParsing="false" onAction="#logout" prefHeight="50.0" prefWidth="37.0" style="-fx-background-radius: 60px; -fx-background-color: transparent;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <image>
+                        <Image url="@../images/sairW.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Text fill="WHITE" layoutX="31.0" layoutY="533.0" opacity="0.5" strokeType="OUTSIDE" strokeWidth="0.0" text="SAIR" />
+         </children>
+      </Pane>
+      <ScrollPane hbarPolicy="NEVER" layoutX="107.0" layoutY="42.0" prefHeight="675.0" prefWidth="1054.0" style="-fx-border-color: none; -fx-background-color: #F5F5F5;" vbarPolicy="NEVER">
+         <content>
+            <Pane prefHeight="863.0" prefWidth="1052.0" style="-fx-background-color: #F5F5F5;">
+               <children>
+                  <Pane fx:id="mensage1" layoutX="31.0" layoutY="38.0" prefHeight="109.0" prefWidth="995.0" style="-fx-background-color: White; -fx-border-color: #b2b2b2; -fx-border-radius: 15px; -fx-background-radius: 15px;" visible="false">
+                     <children>
+                        <Pane layoutX="24.0" layoutY="22.0" prefHeight="68.0" prefWidth="68.0" style="-fx-background-color: #404B59; -fx-background-radius: 60px;">
+                           <children>
+                              <Text fx:id="textNameAbrev1" fill="WHITE" layoutX="22.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RH">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Pane>
+                        <Text fx:id="textDiscipline1" layoutX="129.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estrutura de Dados">
+                           <font>
+                              <Font name="Calibri Bold" size="16.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="textName1" layoutX="129.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rodrigo Henrique Cunha Palacios" />
+                        <Text fx:id="textDate1" layoutX="129.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quinta-Feira 18:40 - 19:30 (N1)" />
+                        <Text fx:id="textRoom1" layoutX="343.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sala: P301" />
+                        <Button fx:id="button1" layoutX="896.0" layoutY="41.0" mnemonicParsing="false" onAction="#click1" prefHeight="31.0" prefWidth="85.0" style="-fx-background-color: #2A486D; -fx-background-radius: 60px;" text="Cancelar" textFill="WHITE">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="mensage2" layoutX="29.0" layoutY="198.0" prefHeight="109.0" prefWidth="995.0" style="-fx-background-color: White; -fx-border-color: #b2b2b2; -fx-border-radius: 15px; -fx-background-radius: 15px;" visible="false">
+                     <children>
+                        <Pane layoutX="24.0" layoutY="22.0" prefHeight="68.0" prefWidth="68.0" style="-fx-background-color: #404B59; -fx-background-radius: 60px;">
+                           <children>
+                              <Text fx:id="textNameAbrev2" fill="WHITE" layoutX="22.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RH">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Pane>
+                        <Text fx:id="textDiscipline2" layoutX="129.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estrutura de Dados">
+                           <font>
+                              <Font name="Calibri Bold" size="16.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="textName2" layoutX="129.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rodrigo Henrique Cunha Palacios" />
+                        <Text fx:id="textDate2" layoutX="129.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quinta-Feira 18:40 - 19:30 (N1)" />
+                        <Text fx:id="textRoom2" layoutX="343.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sala: P301" />
+                        <Button fx:id="button2" layoutX="896.0" layoutY="41.0" mnemonicParsing="false" onAction="#click2" prefHeight="31.0" prefWidth="85.0" style="-fx-background-color: #2A486D; -fx-background-radius: 60px;" text="Cancelar" textFill="WHITE">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="mensage3" layoutX="29.0" layoutY="369.0" prefHeight="109.0" prefWidth="995.0" style="-fx-background-color: White; -fx-border-color: #b2b2b2; -fx-border-radius: 15px; -fx-background-radius: 15px;" visible="false">
+                     <children>
+                        <Pane layoutX="24.0" layoutY="22.0" prefHeight="68.0" prefWidth="68.0" style="-fx-background-color: #404B59; -fx-background-radius: 60px;">
+                           <children>
+                              <Text fx:id="textNameAbrev3" fill="WHITE" layoutX="22.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RH">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Pane>
+                        <Text fx:id="textDiscipline3" layoutX="129.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estrutura de Dados">
+                           <font>
+                              <Font name="Calibri Bold" size="16.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="textName3" layoutX="129.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rodrigo Henrique Cunha Palacios" />
+                        <Text fx:id="textDate3" layoutX="129.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quinta-Feira 18:40 - 19:30 (N1)" />
+                        <Text fx:id="textRoom3" layoutX="343.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sala: P301" />
+                        <Button fx:id="button3" layoutX="896.0" layoutY="41.0" mnemonicParsing="false" onAction="#click3" prefHeight="31.0" prefWidth="85.0" style="-fx-background-color: #2A486D; -fx-background-radius: 60px;" text="Cancelar" textFill="WHITE">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="mensage4" layoutX="29.0" layoutY="531.0" prefHeight="109.0" prefWidth="995.0" style="-fx-background-color: White; -fx-border-color: #b2b2b2; -fx-border-radius: 15px; -fx-background-radius: 15px;" visible="false">
+                     <children>
+                        <Pane layoutX="24.0" layoutY="22.0" prefHeight="68.0" prefWidth="68.0" style="-fx-background-color: #404B59; -fx-background-radius: 60px;">
+                           <children>
+                              <Text fx:id="textNameAbrev4" fill="WHITE" layoutX="22.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RH">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Pane>
+                        <Text fx:id="textDiscipline4" layoutX="129.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estrutura de Dados">
+                           <font>
+                              <Font name="Calibri Bold" size="16.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="textName4" layoutX="129.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rodrigo Henrique Cunha Palacios" />
+                        <Text fx:id="textDate4" layoutX="129.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quinta-Feira 18:40 - 19:30 (N1)" />
+                        <Text fx:id="textRoom4" layoutX="343.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sala: P301" />
+                        <Button fx:id="button4" layoutX="896.0" layoutY="41.0" mnemonicParsing="false" onAction="#click4" prefHeight="31.0" prefWidth="85.0" style="-fx-background-color: #2A486D; -fx-background-radius: 60px;" text="Cancelar" textFill="WHITE">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="mensage5" layoutX="31.0" layoutY="703.0" prefHeight="109.0" prefWidth="995.0" style="-fx-background-color: White; -fx-border-color: #b2b2b2; -fx-border-radius: 15px; -fx-background-radius: 15px;" visible="false">
+                     <children>
+                        <Pane layoutX="24.0" layoutY="22.0" prefHeight="68.0" prefWidth="68.0" style="-fx-background-color: #404B59; -fx-background-radius: 60px;">
+                           <children>
+                              <Text fx:id="textNameAbrev5" fill="WHITE" layoutX="22.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RH">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Pane>
+                        <Text fx:id="textDiscipline5" layoutX="129.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estrutura de Dados">
+                           <font>
+                              <Font name="Calibri Bold" size="16.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="textName5" layoutX="129.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rodrigo Henrique Cunha Palacios" />
+                        <Text fx:id="textDate5" layoutX="129.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quinta-Feira 18:40 - 19:30 (N1)" />
+                        <Text fx:id="textRoom5" layoutX="343.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sala: P301" />
+                        <Button fx:id="button5" layoutX="896.0" layoutY="41.0" mnemonicParsing="false" onAction="#click5" prefHeight="31.0" prefWidth="85.0" style="-fx-background-color: #2A486D; -fx-background-radius: 60px;" text="Cancelar" textFill="WHITE">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+         </content>
+      </ScrollPane>
+   </children>
+</Pane>

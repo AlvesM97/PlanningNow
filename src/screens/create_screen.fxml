@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="759.0" prefWidth="1161.0" style="-fx-background-color: #F5F5F5;" styleClass="teste" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Register_account_controller">
+   <children>
+      <ImageView fitHeight="663.0" fitWidth="567.0" layoutX="639.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/ImagemCadastro.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="215.0" layoutY="90.0" style="-fx-font-weight: bold;" text="Crie sua conta" textAlignment="CENTER">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="210.0" layoutY="139.0" prefHeight="17.0" prefWidth="228.0" text="Comece agora a agendar suas monitorias!" textAlignment="CENTER" />
+      <PasswordField fx:id="user_confirmPassword" layoutX="192.0" layoutY="471.0" prefHeight="34.0" prefWidth="266.0" style="-fx-background-radius: 10px;" />
+      <Label layoutX="196.0" layoutY="454.0" text="Confirme sua Senha:" />
+      <PasswordField fx:id="user_password" layoutX="191.0" layoutY="406.0" prefHeight="34.0" prefWidth="266.0" style="-fx-background-radius: 10px;" />
+      <Label layoutX="198.0" layoutY="389.0" text="Senha:" />
+      <Label layoutX="198.0" layoutY="323.0" text="Curso:" />
+      <Label layoutX="198.0" layoutY="192.0" text="RA:" />
+      <Button layoutX="235.0" layoutY="593.0" mnemonicParsing="false" onAction="#createAccount" prefHeight="34.0" prefWidth="177.0" style="-fx-background-radius: 10px; -fx-background-color: #2A486D;" text="Criar Conta" textFill="WHITE" />
+      <Button layoutX="235.0" layoutY="650.0" mnemonicParsing="false" onAction="#loginAccountScreen" prefHeight="34.0" prefWidth="177.0" style="-fx-background-radius: 10px; -fx-background-color: white; -fx-border-color: #65768C; -fx-border-radius: 10px;" text="Fazer Login" />
+      <TextField fx:id="user_ra" layoutX="191.0" layoutY="209.0" prefHeight="34.0" prefWidth="266.0" style="-fx-background-radius: 10px;" />
+      <TextField fx:id="user_cursor" layoutX="191.0" layoutY="340.0" prefHeight="34.0" prefWidth="266.0" style="-fx-background-radius: 10px;" />
+      <RadioButton fx:id="student" layoutX="250.0" layoutY="523.0" mnemonicParsing="false" onAction="#click_student" selected="true" text="Aluno" />
+      <RadioButton fx:id="monitor" layoutX="341.0" layoutY="523.0" mnemonicParsing="false" onAction="#click_monitor" text="Monitor" />
+      <Label layoutX="198.0" layoutY="257.0" text="Nome:" />
+      <TextField fx:id="user_name" layoutX="191.0" layoutY="274.0" prefHeight="34.0" prefWidth="266.0" style="-fx-background-radius: 10px;" />
+   </children>
+</Pane>

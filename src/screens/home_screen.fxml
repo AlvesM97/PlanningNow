@@ -42,7 +42,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.home_controller">
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Home_controller">
   <children>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="400.0" prefWidth="618.0" VBox.vgrow="ALWAYS">
          <children>

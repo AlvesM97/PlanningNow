@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="759.0" prefWidth="1161.0" style="-fx-background-color: #F5F5F5;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Feed_controller">
+   <children>
+      <Pane layoutX="14.0" layoutY="14.0" prefHeight="731.0" prefWidth="85.0" style="-fx-background-color: #2A486D; -fx-background-radius: 60px;">
+         <children>
+            <Pane layoutX="22.0" layoutY="119.0" prefHeight="42.0" prefWidth="42.0" style="-fx-background-color: White; -fx-background-radius: 60px;">
+               <children>
+                  <Button alignment="CENTER" cache="true" contentDisplay="TOP" layoutX="-3.0" layoutY="-4.0" minWidth="48.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="37.0" style="-fx-background-radius: 60px; -fx-background-color: transparent;">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <image>
+                              <Image url="@../images/feed.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </Pane>
+            <Text fill="WHITE" layoutX="29.0" layoutY="174.0" opacity="0.5" strokeType="OUTSIDE" strokeWidth="0.0" text="FEED" />
+            <Button alignment="CENTER" cache="true" contentDisplay="TOP" layoutX="19.0" layoutY="212.0" minWidth="48.0" mnemonicParsing="false" onAction="#goTime" prefHeight="50.0" prefWidth="37.0" style="-fx-background-radius: 60px; -fx-background-color: transparent;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <image>
+                        <Image url="@../images/horarioW.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Text fill="WHITE" layoutX="9.0" layoutY="267.0" opacity="0.5" strokeType="OUTSIDE" strokeWidth="0.0" text="HORARIOS" textAlignment="CENTER" wrappingWidth="68.4921875" />
+            <Button alignment="CENTER" cache="true" contentDisplay="TOP" layoutX="19.0" layoutY="316.0" minWidth="48.0" mnemonicParsing="false" onAction="#goSchedule" prefHeight="50.0" prefWidth="37.0" style="-fx-background-radius: 60px; -fx-background-color: transparent;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <image>
+                        <Image url="@../images/agendaW.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Text fill="WHITE" layoutX="19.0" layoutY="370.0" opacity="0.5" strokeType="OUTSIDE" strokeWidth="0.0" text="AGENDA" />
+            <Line endX="-48.0" layoutX="117.0" layoutY="433.0" startX="-100.0" stroke="WHITE" />
+            <Button alignment="CENTER" cache="true" contentDisplay="TOP" layoutX="19.0" layoutY="479.0" minWidth="48.0" mnemonicParsing="false" onAction="#logout" prefHeight="50.0" prefWidth="37.0" style="-fx-background-radius: 60px; -fx-background-color: transparent;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <image>
+                        <Image url="@../images/sairW.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Text fill="WHITE" layoutX="31.0" layoutY="533.0" opacity="0.5" strokeType="OUTSIDE" strokeWidth="0.0" text="SAIR" />
+         </children>
+      </Pane>
+      <Pane layoutX="140.0" layoutY="50.0" prefHeight="109.0" prefWidth="977.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #b2b2b2; -fx-border-radius: 15px; -fx-background-radius: 15px;">
+         <children>
+            <Button defaultButton="true" layoutX="904.0" layoutY="70.0" mnemonicParsing="false" onAction="#publish" style="-fx-background-radius: 15px; -fx-background-color: #2A486D;" text="Publicar" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <TextArea fx:id="feed_thinking" layoutX="8.0" layoutY="10.0" prefHeight="50.0" prefWidth="916.0" promptText="oque está pensando?" style="-fx-background-color: #FFFFFF; -fx-border-color: transparent;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </TextArea>
+         </children>
+         <effect>
+            <DropShadow height="18.32" offsetY="3.0" radius="11.407499999999999" width="29.31">
+               <color>
+                  <Color red="0.6980392336845398" green="0.6980392336845398" blue="0.6980392336845398" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Pane>
+      <ScrollPane hbarPolicy="NEVER" layoutX="107.0" layoutY="187.0" prefHeight="552.0" prefWidth="1054.0" style="-fx-border-color: none; -fx-background-color: #F5F5F5;" vbarPolicy="NEVER">
+         <content>
+            <Pane prefHeight="714.0" prefWidth="1052.0" style="-fx-background-color: #F5F5F5;">
+               <children>
+                  <Pane fx:id="mensage1" layoutX="31.0" layoutY="14.0" prefHeight="109.0" prefWidth="977.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #b2b2b2; -fx-border-radius: 15px; -fx-background-radius: 15px;" visible="false">
+                     <effect>
+                        <DropShadow height="18.32" offsetY="3.0" radius="11.407499999999999" width="29.31">
+                           <color>
+                              <Color red="0.6980392336845398" green="0.6980392336845398" blue="0.6980392336845398" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <children>
+                        <Text fx:id="name1" layoutX="97.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gutomorais2002@gmail.com" />
+                        <Text fx:id="date1" layoutX="839.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="07/06/2023 às 19:02" />
+                        <TextField fx:id="description1" alignment="TOP_LEFT" editable="false" layoutX="88.0" layoutY="36.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="59.0" prefWidth="868.0" style="-fx-border-color: transparent; -fx-background-color: transparent;" text="Estou procurando um grupo de estudos para aprender mais sobre Java, alguém?" />
+                        <Pane layoutX="14.0" layoutY="21.0" prefHeight="68.0" prefWidth="68.0" style="-fx-background-color: #404B59; -fx-background-radius: 60px;">
+                           <children>
+                              <Text fx:id="textNameAbrev1" fill="WHITE" layoutX="22.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RH">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Pane>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="mensage2" layoutX="31.0" layoutY="156.0" prefHeight="109.0" prefWidth="977.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #b2b2b2; -fx-border-radius: 15px; -fx-background-radius: 15px;" visible="false">
+                     <effect>
+                        <DropShadow height="18.32" offsetY="3.0" radius="11.407499999999999" width="29.31">
+                           <color>
+                              <Color red="0.6980392336845398" green="0.6980392336845398" blue="0.6980392336845398" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <children>
+                        <Text fx:id="name2" layoutX="96.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gutomorais2002@gmail.com" />
+                        <Text fx:id="date2" layoutX="839.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="07/06/2023 às 19:02" />
+                        <TextField fx:id="description2" alignment="TOP_LEFT" editable="false" layoutX="87.0" layoutY="35.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="59.0" prefWidth="877.0" style="-fx-border-color: transparent; -fx-background-color: transparent;" text="Estou procurando um grupo de estudos para aprender mais sobre Java, alguém?" />
+                        <Pane layoutX="14.0" layoutY="21.0" prefHeight="68.0" prefWidth="68.0" style="-fx-background-color: #404B59; -fx-background-radius: 60px;">
+                           <children>
+                              <Text fx:id="textNameAbrev2" fill="WHITE" layoutX="22.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RH">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Pane>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="mensage3" layoutX="31.0" layoutY="303.0" prefHeight="109.0" prefWidth="977.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #b2b2b2; -fx-border-radius: 15px; -fx-background-radius: 15px;" visible="false">
+                     <effect>
+                        <DropShadow height="18.32" offsetY="3.0" radius="11.407499999999999" width="29.31">
+                           <color>
+                              <Color red="0.6980392336845398" green="0.6980392336845398" blue="0.6980392336845398" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <children>
+                        <Text fx:id="name3" layoutX="96.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gutomorais2002@gmail.com" />
+                        <Text fx:id="date3" layoutX="839.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="07/06/2023 às 19:02" />
+                        <TextField fx:id="description3" alignment="TOP_LEFT" editable="false" layoutX="88.0" layoutY="35.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="59.0" prefWidth="876.0" style="-fx-border-color: transparent; -fx-background-color: transparent;" text="Estou procurando um grupo de estudos para aprender mais sobre Java, alguém?" />
+                        <Pane layoutX="14.0" layoutY="21.0" prefHeight="68.0" prefWidth="68.0" style="-fx-background-color: #404B59; -fx-background-radius: 60px;">
+                           <children>
+                              <Text fx:id="textNameAbrev3" fill="WHITE" layoutX="22.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RH">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Pane>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="mensage4" layoutX="31.0" layoutY="447.0" prefHeight="109.0" prefWidth="977.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #b2b2b2; -fx-border-radius: 15px; -fx-background-radius: 15px;" visible="false">
+                     <effect>
+                        <DropShadow height="18.32" offsetY="3.0" radius="11.407499999999999" width="29.31">
+                           <color>
+                              <Color red="0.6980392336845398" green="0.6980392336845398" blue="0.6980392336845398" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <children>
+                        <Text fx:id="name4" layoutX="94.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gutomorais2002@gmail.com" />
+                        <Text fx:id="date4" layoutX="838.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="07/06/2023 às 19:02" />
+                        <TextField fx:id="description4" alignment="TOP_LEFT" editable="false" layoutX="85.0" layoutY="35.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="59.0" prefWidth="879.0" style="-fx-border-color: transparent; -fx-background-color: transparent;" text="Estou procurando um grupo de estudos para aprender mais sobre Java, alguém?" />
+                        <Pane layoutX="14.0" layoutY="21.0" prefHeight="68.0" prefWidth="68.0" style="-fx-background-color: #404B59; -fx-background-radius: 60px;">
+                           <children>
+                              <Text fx:id="textNameAbrev4" fill="WHITE" layoutX="22.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RH">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Pane>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="mensage5" layoutX="31.0" layoutY="605.0" prefHeight="109.0" prefWidth="977.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #b2b2b2; -fx-border-radius: 15px; -fx-background-radius: 15px;" visible="false">
+                     <effect>
+                        <DropShadow height="18.32" offsetY="3.0" radius="11.407499999999999" width="29.31">
+                           <color>
+                              <Color red="0.6980392336845398" green="0.6980392336845398" blue="0.6980392336845398" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <children>
+                        <Text fx:id="name5" layoutX="94.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gutomorais2002@gmail.com" />
+                        <Text fx:id="date5" layoutX="838.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="07/06/2023 às 19:02" />
+                        <TextField fx:id="description5" alignment="TOP_LEFT" editable="false" layoutX="85.0" layoutY="35.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="59.0" prefWidth="879.0" style="-fx-border-color: transparent; -fx-background-color: transparent;" text="Estou procurando um grupo de estudos para aprender mais sobre Java, alguém?" />
+                        <Pane layoutX="14.0" layoutY="21.0" prefHeight="68.0" prefWidth="68.0" style="-fx-background-color: #404B59; -fx-background-radius: 60px;">
+                           <children>
+                              <Text fx:id="textNameAbrev5" fill="WHITE" layoutX="22.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RH">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Pane>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+         </content>
+      </ScrollPane>
+   </children>
+</Pane>
