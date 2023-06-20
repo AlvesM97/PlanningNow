@@ -2,18 +2,17 @@ package api.insert;
 
 import api.BDConnection;
 
-public class user_insert {
+public class User_insert {
 
     BDConnection conexaoBd = new BDConnection();
 
-    public void insert(String name, String email, String password) {
+    public void insert(int ra, String password, int type, String name, String cursor) {
         conexaoBd.openConnection();
-
         String sqlQuery;
 
-        sqlQuery = "insert into usuario (nome, email, senha) values ('" + name + "', '" + email + "', '" + password
-                + "')";
-
+        sqlQuery = "INSERT INTO USUARIO (ra, senha, tipo, nome, curso) values ('" + ra + "', '" + password + "','"
+                + type + "','" + name + "', '" + cursor + "')";
+                
         conexaoBd.executarQueryInsert(sqlQuery);
     }
 
