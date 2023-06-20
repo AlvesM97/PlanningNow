@@ -180,35 +180,35 @@ public class TimeA_controller implements Initializable {
                     textNameAbrev1.setText(resultado);
                     textName1.setText(name);
                     textDate1.setText(monitoringsList.get(i).getDate() + " " + monitoringsList.get(i).getHour());
-                    textRoom1.setText(monitoringsList.get(i).getRoom());
+                    textRoom1.setText("Sala: " + monitoringsList.get(i).getRoom());
                 } else if (i == 1) {
                     mensage2.setVisible(true);
                     textDiscipline2.setText(monitoringsList.get(i).getDiscipline());
                     textNameAbrev2.setText(resultado);
                     textName2.setText(name);
                     textDate2.setText(monitoringsList.get(i).getDate() + " " + monitoringsList.get(i).getHour());
-                    textRoom2.setText(monitoringsList.get(i).getRoom());
+                    textRoom2.setText("Sala: " + monitoringsList.get(i).getRoom());
                 } else if (i == 2) {
                     mensage3.setVisible(true);
                     textDiscipline3.setText(monitoringsList.get(i).getDiscipline());
                     textNameAbrev3.setText(resultado);
                     textName3.setText(name);
                     textDate3.setText(monitoringsList.get(i).getDate() + " " + monitoringsList.get(i).getHour());
-                    textRoom3.setText(monitoringsList.get(i).getRoom());
+                    textRoom3.setText("Sala: " + monitoringsList.get(i).getRoom());
                 } else if (i == 3) {
                     mensage4.setVisible(true);
                     textDiscipline4.setText(monitoringsList.get(i).getDiscipline());
                     textNameAbrev4.setText(resultado);
                     textName4.setText(name);
                     textDate4.setText(monitoringsList.get(i).getDate() + " " + monitoringsList.get(i).getHour());
-                    textRoom4.setText(monitoringsList.get(i).getRoom());
+                    textRoom4.setText("Sala: " + monitoringsList.get(i).getRoom());
                 } else if (i == 4) {
                     mensage5.setVisible(true);
                     textDiscipline5.setText(monitoringsList.get(i).getDiscipline());
                     textNameAbrev5.setText(resultado);
                     textName5.setText(name);
                     textDate5.setText(monitoringsList.get(i).getDate() + " " + monitoringsList.get(i).getHour());
-                    textRoom5.setText(monitoringsList.get(i).getRoom());
+                    textRoom5.setText("Sala: " + monitoringsList.get(i).getRoom());
                 } else {
                 }
             }

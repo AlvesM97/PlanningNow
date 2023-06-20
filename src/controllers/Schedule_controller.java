@@ -177,35 +177,35 @@ public class Schedule_controller implements Initializable {
                     textNameAbrev1.setText(resultado);
                     textName1.setText(name);
                     textDate1.setText(monitoring.getDate() + " " + monitoring.getHour());
-                    textRoom1.setText(monitoring.getRoom());
+                    textRoom1.setText("Sala: " + monitoring.getRoom());
                 } else if (i == 1) {
                     mensage2.setVisible(true);
                     textDiscipline2.setText(monitoring.getDiscipline());
                     textNameAbrev2.setText(resultado);
                     textName2.setText(name);
                     textDate2.setText(monitoring.getDate() + " " + monitoring.getHour());
-                    textRoom2.setText(monitoring.getRoom());
+                    textRoom2.setText("Sala: " + monitoring.getRoom());
                 } else if (i == 2) {
                     mensage3.setVisible(true);
                     textDiscipline3.setText(monitoring.getDiscipline());
                     textNameAbrev3.setText(resultado);
                     textName3.setText(name);
                     textDate3.setText(monitoring.getDate() + " " + monitoring.getHour());
-                    textRoom3.setText(monitoring.getRoom());
+                    textRoom3.setText("Sala: " + monitoring.getRoom());
                 } else if (i == 3) {
                     mensage4.setVisible(true);
                     textDiscipline4.setText(monitoring.getDiscipline());
                     textNameAbrev4.setText(resultado);
                     textName4.setText(name);
                     textDate4.setText(monitoring.getDate() + " " + monitoring.getHour());
-                    textRoom4.setText(monitoring.getRoom());
+                    textRoom4.setText("Sala: " + monitoring.getRoom());
                 } else if (i == 4) {
                     mensage5.setVisible(true);
                     textDiscipline5.setText(monitoring.getDiscipline());
                     textNameAbrev5.setText(resultado);
                     textName5.setText(name);
                     textDate5.setText(monitoring.getDate() + " " + monitoring.getHour());
-                    textRoom5.setText(monitoring.getRoom());
+                    textRoom5.setText("Sala: " + monitoring.getRoom());
                 } else {
                 }
             }
