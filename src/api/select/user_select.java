@@ -3,7 +3,8 @@ package api.select;
 import java.util.StringJoiner;
 
 import api.BDConnection;
-public class user_select {
+
+public class User_select {
     BDConnection conexaoBd = new BDConnection();
 
     public void getAll() {
@@ -16,14 +17,25 @@ public class user_select {
         conexaoBd.executarQueryGet(sqlQuery);
     }
 
-    public StringJoiner get(String nome, String email) {
+    public StringJoiner getLogin(int ra, String password) {
         conexaoBd.openConnection();
-
         String sqlQuery;
 
-        sqlQuery = "select * from usuario where usuario.nome  = '" + nome + "' and usuario.email = '" + email + "'";
+        sqlQuery = "SELECT * FROM usuario WHERE usuario.ra = '" + ra + "' AND usuario.senha = '" + password + "'";
 
-       StringJoiner result = conexaoBd.executarQueryGet(sqlQuery);
-       return result;
+        StringJoiner result = conexaoBd.executarQueryGet(sqlQuery);
+
+        return result;
+    }
+
+    public StringJoiner getRA(int ra) {
+        conexaoBd.openConnection();
+        String sqlQuery;
+
+        sqlQuery = "SELECT * FROM usuario WHERE usuario.ra = '" + ra + "'";
+
+        StringJoiner result = conexaoBd.executarQueryGet(sqlQuery);
+
+        return result;
     }
 }
