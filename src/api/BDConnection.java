@@ -4,20 +4,18 @@ import java.sql.*;
 import java.util.StringJoiner;
 
 public class BDConnection {
-    public static String url = "jdbc:mysql://localhost:3306/5style";
+    public static String url = "jdbc:mysql://localhost:3306/planningnow";
     public static String user = "Gustavo";
     public static String pswd = "1234";
 
     private Connection db_connection = null;
     private Statement sql_management = null;
-    private ResultSet result_sql = null;
     private StringJoiner joiner = new StringJoiner(", ", "[", "]");
 
     public void openConnection() {
 
         try {
             db_connection = DriverManager.getConnection(url, user, pswd);
-            System.out.println("Conexão feita.");
             sql_management = db_connection.createStatement();
         } catch (Exception Error) {
             System.out.println(Error.getMessage());
@@ -54,7 +52,6 @@ public class BDConnection {
                     String nomeDaColuna = metaData.getColumnName(coluna);
                     joiner.add(nomeDaColuna + "=" + rs.getObject(coluna));
                 }
-                // System.out.println(joiner.toString());
             }
             
             rs.close();
